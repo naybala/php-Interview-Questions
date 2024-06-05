@@ -13,6 +13,8 @@ if($input<=0){
 }
 
 $result = leadingZero($input, 3); 
+echo "\n";
+echo "The output is enter below "."\n";
 echo $result;
 
 ?>

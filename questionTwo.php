@@ -23,6 +23,8 @@ if (count($numbers) !== 5) {
 }
 
 $result = getLargestAndSmallest($numbers);
+echo "\n";
+echo "The output is enter below "."\n";
 echo "Largest integer is: " . $result['largest'] . "\n";
 echo "Smallest integer is: " . $result['smallest'] . "\n";
 ?>
