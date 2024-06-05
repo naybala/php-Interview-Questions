@@ -12,7 +12,7 @@ function checkString($input) {
 }
 
 
-echo "Enter letters only W And S separated by spaces:: ";
+echo "Enter letters only W And S separated by spaces: ";
 $input = trim(fgets(STDIN));
 $result = checkString($input);
 echo ($result);
