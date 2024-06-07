@@ -11,7 +11,7 @@ $totalMinute = $bMinute + $cMinute;
 
 echo "Enter Train count : ";
 $trainCountInput = trim(fgets(STDIN));
-echo "Enter Train coming count was $trainCountInput the format is if 06:15 the input is 6 15 : "."\n";
+echo "The Train coming count was $trainCountInput the format is if 06:15 the input is 6 15 : "."\n";
 for ($x = 0; $x <= $trainCountInput-1 ; $x++) {
     $input = trim(fgets(STDIN));
     $input = explode(" ",$input);
@@ -28,7 +28,7 @@ foreach ($trainInput as $key => $value) {
         $getTrainTime = $key;
         break;
     }
-  }
+}
 
 $finalTime = $trainInput["$getTrainTime"] - $aMinute;
 $hour = intdiv($finalTime,60);

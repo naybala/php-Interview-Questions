@@ -46,10 +46,8 @@ for ($x = 0; $x <= $column-1 ; $x++) {
 echo "\n";
 echo "The output is enter below "."\n";
 $output = considerResult($afterInput);
-
-
 $count = count($output);
-for ($i = 0; $i < $count; $i += $column) {
-    $group = array_slice($output, $i, $column);
+for ($i = 0; $i < $count; $i += $row) {
+    $group = array_slice($output, $i, $row);
     echo implode(' ', $group) . "\n";
 }

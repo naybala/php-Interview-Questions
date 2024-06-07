@@ -23,4 +23,4 @@ function findIntersection($str1, $str2) {
 $result = findIntersection($input,$inputTwo);
 echo "\n";
 echo "The output is enter below "."\n";
-echo ($result);
+echo ($result == "" ? "no input match found!" : $result);

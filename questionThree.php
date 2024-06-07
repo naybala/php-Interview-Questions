@@ -4,7 +4,7 @@ function checkString($input) {
         return "Invalid input. Only 'W' and 'S' with space are allowed.";
     }
     $countW = substr_count($input, 'W');
-    if ($countW > 5) {
+    if ($countW >= 5) {
         return "OK";
     } else {
         return "NG";
